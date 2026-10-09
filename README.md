@@ -19,7 +19,7 @@
 * **狀態維護**：在不同視窗之間無縫傳遞遊戲狀態（如：玩家分數、遊玩時間、通關紀錄）。
 
 ### 2. 🖼️ 核心拼圖演算法 (Puzzle Algorithm)
-* **動態切割與洗牌**：將完整圖片 (如 `puzzle1.jpg` ~ `puzzle10.jpg`) 動態切割成多個區塊，並使用隨機演算法 (Random Algorithm) 進行打亂，同時確保拼圖矩陣的「可解性 (Solvability)」。
+* **動態切割與洗牌**：將完整圖片 (解壓縮自 `pic.zip`) 動態切割成多個區塊，並使用隨機演算法 (Random Algorithm) 進行打亂，同時確保拼圖矩陣的「可解性 (Solvability)」。
 * **勝負判定機制**：實作即時的座標或陣列比對邏輯，在玩家每一次移動後，精準判斷是否已達成拼圖完成的條件。
 
 ### 3. 🎵 多媒體與互動體驗 (Multimedia Integration)
@@ -46,7 +46,7 @@
 ```text
 Windows-Programming/
 ├── 專題.sln                # Visual Studio 方案檔
-├── *.jpg / *.wav           # 遊戲全域資源 (圖片與音效檔)
+├── pic.zip                 # 遊戲全域資源打包檔 (含所有拼圖圖片與音效，請於執行前解壓縮)
 └── 專題/                   # 主程式專案目錄
     ├── Program.cs          # 程式進入點
     ├── Form1.cs            # 主選單/入口介面
@@ -63,8 +63,9 @@ Windows-Programming/
    ```bash
    git clone https://github.com/renkai09/Windows-Programming.git
    ```
-3. 使用 Visual Studio 打開專案根目錄下的 `專題.sln`。
-4. 按下 `F5` 或點擊「開始」按鈕建置並執行專案。
+3. **重要：解壓縮資源檔**。請將根目錄下的 `pic.zip` 解壓縮，確保遊戲所需的圖片與音效檔放置於正確位置。
+4. 使用 Visual Studio 打開專案根目錄下的 `專題.sln`。
+5. 按下 `F5` 或點擊「開始」按鈕建置並執行專案。
 
 ---
 
